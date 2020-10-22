@@ -9,7 +9,10 @@
         <resource name="drivers/mysql/mysql8"/>
         <resource name="drivers/mariadb"/>
         <resource name="drivers/postgresql"/>
+        <resource name="drivers/elasticsearch"/>
+        <resource name="drivers/mongodb"/>
         <resource name="drivers/sqlite/xerial"/>
+        <resource name="drivers/oracle"/>
     </extension>
 
     <!-- Bundles  -->
@@ -22,6 +25,9 @@
         <bundle id="drivers.mariadb" label="MariaDB drivers"/>
         <bundle id="drivers.postgresql" label="PostgreSQL drivers"/>
         <bundle id="drivers.sqlite.xerial" label="SQLite drivers"/>
+        <bundle id="drivers.elasticsearch" label="Elasticsearch drivers"/>
+        <bundle id="drivers.mongodb" label="Mongodb drivers"/>
+        <bundle id="drivers.oracle" label="Oracle data source"/>
     </extension>
 
     <!-- Enabled drivers -->
@@ -33,7 +39,10 @@
         <driver id="mysql:mysql8"/>
         <driver id="mysql:mariaDB"/>
         <driver id="postgresql:postgres-jdbc"/>
+        <driver id="elasticsearch:elastic_search_jdbc"/>
+        <driver id="mongodb:mongo-db"/>
         <driver id="generic:sqlite_jdbc"/>
+        <driver id="oracle:oracle_thin"/>
     </extension>
 
 

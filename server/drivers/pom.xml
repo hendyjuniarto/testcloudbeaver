@@ -19,6 +19,9 @@
         <module>mariadb</module>
         <module>postgresql</module>
         <module>sqlite</module>
+        <module>elasticsearch</module>
+        <module>mongodb</module>
+        <module>oracle</module>
     </modules>
 
     <build>

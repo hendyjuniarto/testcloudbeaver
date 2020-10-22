@@ -405,6 +405,7 @@ public class WebSession implements DBASession {
             protected IStatus run(DBRProgressMonitor monitor) {
                 TaskProgressMonitor taskMonitor = new TaskProgressMonitor(monitor, asyncTask);
                 try {
+                    taskMonitor.beginTask("test query", 2);
                     runnable.run(taskMonitor);
                     asyncTask.setResult(runnable.getResult());
                     asyncTask.setStatus("Finished");
